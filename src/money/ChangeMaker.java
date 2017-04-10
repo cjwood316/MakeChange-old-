@@ -8,12 +8,14 @@ public class ChangeMaker {
 		Scanner kb = new Scanner(System.in);
 		// need method for change
 		// check if amount tendered was lower than item price
-		int price;
-		int change;
-		int moneyProvided;
-		System.out.println("Please enter purchase price: ");
-		System.out.print("Enter the amount given by the customer:");
+		double priceOfProduct;
+		double change;
+		double moneyProvided;
+		
+		System.out.println("Please enter purchase price of product: $");
+		priceOfProduct = kb.nextDouble();
+		System.out.print("Enter the amount given by the customer: $");
+		moneyProvided = kb.nextDouble();
 
 	}
-
 }
