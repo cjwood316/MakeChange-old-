@@ -71,5 +71,11 @@ public class ChangeMaker {
             int pennies = change;
             System.out.println(pennies + " penny");
 		}
+            if (moneyProvided < priceOfProduct) {
+                System.out.print("Not enough money!");
+            } else if (moneyProvided == priceOfProduct) {
+                System.out.print("No change is necessary!");
+		}
+		
 	}
 }
