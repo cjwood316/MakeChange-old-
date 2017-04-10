@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class ChangeMaker {
 
-	Scanner kb = new Scanner(System.in);
-
 	public static void main(String[] args) {
+		Scanner kb = new Scanner(System.in);
 		// need method for change
 		// check if amount tendered was lower than item price
-		// create values for change
-		double cash;
-		String answer;
-		
+		int price;
+		int change;
+		int moneyProvided;
+		System.out.println("Please enter purchase price: ");
+		System.out.print("Enter the amount given by the customer:");
 
 	}
 
