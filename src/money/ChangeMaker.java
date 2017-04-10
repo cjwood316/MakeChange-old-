@@ -48,6 +48,28 @@ public class ChangeMaker {
 				System.out.println(ones + " $1 bill(s)");
 				//Divided by 100 to counter the multiplication of 100.
 			}
+			int quarters = change / 25;
+            if (quarters > 0) {
+                change = change % 25;
+                System.out.println(quarters + " quarter");
+                //Divided by 25 to counter multiplication of 100.
+            }
+
+            int dimes = change / 10;
+            if (dimes > 0) {
+                change = change % 10;
+                System.out.println(dimes + " dime");
+              //Divided by 10 to counter multiplication of 100.
+            }
+
+            int nickels = change / 5;
+            if (nickels > 0) {
+                change = change % 5;
+                System.out.println(nickels + " nickel");
+              //Divided by 5 to counter multiplication of 100.
+            }
+            int pennies = change;
+            System.out.println(pennies + " penny");
 		}
 	}
 }
